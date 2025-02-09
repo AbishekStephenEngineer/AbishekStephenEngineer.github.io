@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abishek Weds Leeli</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        .sakura {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ffd7e6;
+            border-radius: 12px 1px;
+            opacity: 0.75;
+            animation: fall linear infinite, sway ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .sakura:nth-child(1) { left: 10%; animation-duration: 12s, 3s; animation-delay: -2s; }
+        .sakura:nth-child(2) { left: 20%; animation-duration: 14s, 4s; animation-delay: -1s; }
+        .sakura:nth-child(3) { left: 30%; animation-duration: 16s, 3.5s; animation-delay: -3s; }
+        .sakura:nth-child(4) { left: 40%; animation-duration: 13s, 4.5s; animation-delay: -2.5s; }
+        .sakura:nth-child(5) { left: 50%; animation-duration: 15s, 3.8s; animation-delay: -1.5s; }
+        .sakura:nth-child(6) { left: 60%; animation-duration: 17s, 4.2s; animation-delay: -3.5s; }
+        .sakura:nth-child(7) { left: 70%; animation-duration: 12s, 3.2s; animation-delay: -2.7s; }
+        .sakura:nth-child(8) { left: 80%; animation-duration: 14s, 3.7s; animation-delay: -1.7s; }
+        .sakura:nth-child(9) { left: 90%; animation-duration: 15s, 4.1s; animation-delay: -3.2s; }
+        .sakura:nth-child(10) { left: 95%; animation-duration: 16s, 3.4s; animation-delay: -2.2s; }
+
+        @keyframes fall {
+            0% { top: -10%; transform: rotate(0deg); }
+            100% { top: 100%; transform: rotate(360deg); }
+        }
+
+        @keyframes sway {
+            0%, 100% { margin-left: 0; }
+            50% { margin-left: 30px; }
+        }
+    </style>
+</head>
+
+<body class="bg-rose-50 min-h-screen">
+    <!-- Sakura Container -->
+    <div class="fixed inset-0 pointer-events-none z-10">
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+        <div class="sakura"></div>
+    </div>
+
+    <div class="container mx-auto p-8 md:p-12">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="mb-10">
+                <h2 class="text-3xl md:text-5xl mb-6 text-rose-700" style="font-family: 'Playfair Display', serif;">
+                    Abishek & Leeli
+                </h2>
+                <p class="text-gray-600 text-xl mb-4">Request the pleasure of your company</p>
+                <p class="text-gray-600 text-xl mb-4">to celebrate their wedding</p>
+            </div>
+            <div class="w-24 h-1 bg-rose-300 mx-auto mb-8"></div>
+            <div class="relative w-full max-w-2xl mx-auto mb-8">
+                <img src="res/main-photo.png" alt="Abishek and Leeli" class="w-full h-auto rounded-lg">
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="bg-white shadow-lg rounded-lg p-8 md:p-12 text-center" style="position: relative; top: -48px;">
+            <div class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white to-transparent" style="top: -192px;"></div>
+            <!-- Events Section -->
+            <div class="space-y-12">
+                <div class="w-24 h-1 bg-rose-300 mx-auto mb-8"></div>
+                <!-- Engagement -->
+                <div class="pb-8">
+                    <h3 class="text-4xl text-rose-600 mb-4" style="font-family: 'Playfair Display', serif;">Engagement</h3>
+                    <div class="flex items-center justify-center text-gray-600">
+                        <div class="flex-1 text-base md:text-xl text-right">
+                            <div class="mb-2">வியாழன், மே 22, 2025</div>
+                            <div class="mb-4">மாலை 7:00 மணி</div>
+                            <p>நூற்றாண்டு மண்டபம்</p>
+                            <p>பாளையங்கோட்டை</p>
+                        </div>
+                        <div class="h-12 w-px bg-gray-300 mx-2 md:mx-8"></div>
+                        <div class="flex-1 text-base md:text-xl text-left">
+                            <div class="mb-2">Thursday, May 22nd, 2025</div>
+                            <div class="mb-4">7:00 in the evening</div>
+                            <p>Centenary Hall</p>
+                            <p>Palayamkottai</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <iframe class="w-full h-64 rounded-lg"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.6556676770183!2d77.7328426!3d8.7242093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0411f7e5e811cb%3A0xb10a4f6aa0fe8b49!2sCentenary%20Hall!5e0!3m2!1sen!2sin!4v1739087193943!5m2!1sen!2sin"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="w-24 h-1 bg-rose-300 mx-auto mb-8"></div>
+                <!-- Wedding -->
+                <div class="pb-8">
+                    <h3 class="text-4xl text-rose-600 mb-4" style="font-family: 'Playfair Display', serif;">Wedding</h3>
+                    <div class="flex items-center justify-center text-gray-600">
+                        <div class="flex-1 text-base md:text-xl text-right">
+                            <div class="mb-2">வெள்ளிக்கிழமை, மே 23, 2025</div>
+                            <div class="mb-4">காலை 10:00 மணி</div>
+                            <p>தூய திரித்துவ பேராலயம்</p>
+                            <p>பாளையங்கோட்டை</p>
+                        </div>
+                        <div class="h-12 w-px bg-gray-300 mx-2 md:mx-8"></div>
+                        <div class="flex-1 text-base md:text-xl text-left">
+                            <div class="mb-2">Friday, May 23rd, 2025</div>
+                            <div class="mb-4">10:00 in the morning</div>
+                            <p>Holy Trinity Cathedral</p>
+                            <p>Palayamkottai</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <iframe class="w-full h-64 rounded-lg"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d985.9084173414776!2d77.7269873377205!3d8.726291792582975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0411f434435525%3A0xb52ce7cc942d42c2!2sC.S.I%20Holy%20Trinity%20Cathedral%20Palayamkottai!5e0!3m2!1sen!2sin!4v1739087369481!5m2!1sen!2sin"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="w-24 h-1 bg-rose-300 mx-auto mb-8"></div>
+                <!-- Reception -->
+                <div class="pb-8">
+                    <h3 class="text-4xl text-rose-600 mb-4" style="font-family: 'Playfair Display', serif;">Reception</h3>
+                    <div class="flex items-center justify-center text-gray-600">
+                        <div class="flex-1 text-base md:text-xl text-right">
+                            <div class="mb-2">வெள்ளிக்கிழமை, மே 23, 2025</div>
+                            <div class="mb-4">மதியம் 12:00 மணி</div>
+                            <p>நூற்றாண்டு மண்டபம்</p>
+                            <p>பாளையங்கோட்டை</p>
+                        </div>
+                        <div class="h-12 w-px bg-gray-300 mx-2 md:mx-8"></div>
+                        <div class="flex-1 text-base md:text-xl text-left">
+                            <div class="mb-2">Thursday, May 23rd, 2025</div>
+                            <div class="mb-4">12:00 in the afternoon</div>
+                            <p>Centenary Hall</p>
+                            <p>Palayamkottai</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <iframe class="w-full h-64 rounded-lg"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.6556676770183!2d77.7328426!3d8.7242093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0411f7e5e811cb%3A0xb10a4f6aa0fe8b49!2sCentenary%20Hall!5e0!3m2!1sen!2sin!4v1739087193943!5m2!1sen!2sin"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
