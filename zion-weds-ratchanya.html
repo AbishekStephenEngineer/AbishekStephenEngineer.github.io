@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zion Raj Weds Ratchanya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+  <style>
+      .sakura {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: #ffd7e6;
+          border-radius: 12px 1px;
+          opacity: 0.75;
+          animation: fall linear infinite, sway ease-in-out infinite;
+          transform-origin: center;
+      }
+
+      .sakura:nth-child(1) {
+          left: 10%;
+          animation-duration: 12s, 3s;
+          animation-delay: -2s;
+      }
+
+      .sakura:nth-child(2) {
+          left: 20%;
+          animation-duration: 14s, 4s;
+          animation-delay: -1s;
+      }
+
+      .sakura:nth-child(3) {
+          left: 30%;
+          animation-duration: 16s, 3.5s;
+          animation-delay: -3s;
+      }
+
+      .sakura:nth-child(4) {
+          left: 40%;
+          animation-duration: 13s, 4.5s;
+          animation-delay: -2.5s;
+      }
+
+      .sakura:nth-child(5) {
+          left: 50%;
+          animation-duration: 15s, 3.8s;
+          animation-delay: -1.5s;
+      }
+
+      .sakura:nth-child(6) {
+          left: 60%;
+          animation-duration: 17s, 4.2s;
+          animation-delay: -3.5s;
+      }
+
+      .sakura:nth-child(7) {
+          left: 70%;
+          animation-duration: 12s, 3.2s;
+          animation-delay: -2.7s;
+      }
+
+      .sakura:nth-child(8) {
+          left: 80%;
+          animation-duration: 14s, 3.7s;
+          animation-delay: -1.7s;
+      }
+
+      .sakura:nth-child(9) {
+          left: 90%;
+          animation-duration: 15s, 4.1s;
+          animation-delay: -3.2s;
+      }
+
+      .sakura:nth-child(10) {
+          left: 95%;
+          animation-duration: 16s, 3.4s;
+          animation-delay: -2.2s;
+      }
+
+      @keyframes fall {
+          0% {
+              top: -10%;
+              transform: rotate(0deg);
+          }
+          100% {
+              top: 100%;
+              transform: rotate(360deg);
+          }
+      }
+
+      @keyframes sway {
+          0%, 100% {
+              margin-left: 0;
+          }
+          50% {
+              margin-left: 30px;
+          }
+      }
+  </style>
+</head>
+
+<body class="bg-yellow-50 min-h-screen">
+<!-- Sakura Container -->
+<div class="fixed inset-0 pointer-events-none z-10">
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+  <div class="sakura"></div>
+</div>
+
+<div class="container mx-auto p-8 md:p-12">
+  <!-- Header -->
+  <header class="text-center mb-12">
+    <div class="mb-10">
+      <h2 class="text-3xl md:text-5xl mb-6 text-rose-700" style="font-family: 'Playfair Display', serif;">
+        Zion Raj & Ratchanya
+      </h2>
+      <p class="text-gray-600 text-xl mb-4">Request the pleasure of your company</p>
+      <p class="text-gray-600 text-xl mb-4">to celebrate their wedding</p>
+    </div>
+    <div class="w-24 h-1 bg-rose-300 mx-auto mb-8"></div>
+    <div class="relative w-full max-w-2xl mx-auto mb-8">
+      <img src="res/main-photo-z.png" alt="Zion Raj and Ratchanya" class="w-full h-auto">
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="bg-white shadow-lg p-8 md:p-12 text-center" style="position: relative; top: -48px;">
+    <div class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white to-transparent"
+         style="top: -192px;"></div>
+    <!-- Events Section -->
+    <div class="space-y-12">
+      <div class="w-24 h-1 bg-rose-300 mx-auto mb-8"></div>
+      <!-- Wedding -->
+      <div class="pb-8">
+        <h3 class="text-4xl text-rose-600 mb-4" style="font-family: 'Playfair Display', serif;">Wedding</h3>
+        <div class="flex items-center justify-center text-gray-600">
+          <div class="flex-1 text-right whitespace-nowrap text-[clamp(8px,2vw,20px)]">
+            <div class="mb-2">திங்கட்கிழமை, ஜனவரி 5, 2026</div>
+            <div class="mb-4">காலை 9:30 மணி</div>
+            <p>சமாதானபுரம் Peace-AG சபை</p>
+            <p>பாளையங்கோட்டை</p>
+          </div>
+          <div class="h-12 w-px bg-gray-300 mx-2 md:mx-8"></div>
+          <div class="flex-1 text-left whitespace-nowrap text-[clamp(8px,2vw,20px)]">
+            <div class="mb-2">Monday, Januaray 5th, 2026</div>
+            <div class="mb-4">9:30 in the morning</div>
+            <p>Peace A.G Church</p>
+            <p>Palayamkottai</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <iframe class="w-full h-64 rounded-lg"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63098.25476367356!2d77.6675596486328!3d8.7256052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0411ff954f4605%3A0xf928c2b9d3085d09!2sPeace%20A.G%20Church!5e0!3m2!1sen!2sin!4v1766301373264!5m2!1sen!2sin"
+                  frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="w-24 h-1 bg-rose-300 mx-auto mb-8"></div>
+      <!-- Reception -->
+      <div class="pb-8">
+        <h3 class="text-4xl text-rose-600 mb-4" style="font-family: 'Playfair Display', serif;">Reception</h3>
+        <div class="flex items-center justify-center text-gray-600">
+          <div class="flex-1 text-right whitespace-nowrap text-[clamp(8px,2vw,20px)]">
+            <div class="mb-2">திங்கட்கிழமை, ஜனவரி 5, 2026</div>
+            <div class="mb-4">காலை 11:30 மணி</div>
+            <p>மூன் மஹால்</p>
+            <p>பாளையங்கோட்டை</p>
+          </div>
+          <div class="h-12 w-px bg-gray-300 mx-2 md:mx-8"></div>
+          <div class="flex-1 text-left whitespace-nowrap text-[clamp(8px,2vw,20px)]">
+            <div class="mb-2">Monday, Januaray 5th, 2026</div>
+            <div class="mb-4">11:30 in the morning</div>
+            <p>Moon Mahal</p>
+            <p>Palayamkottai</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <iframe class="w-full h-64 rounded-lg"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.9865541848885!2d77.74042704899905!3d8.692825869135122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b040d4ded98933f%3A0xb4ff2336509070d0!2sMoon%20Mahal!5e0!3m2!1sen!2sin!4v1766301467266!5m2!1sen!2sin"
+                  frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <!-- Reminder -->
+      <div class="w-24 h-1 bg-rose-300 mx-auto mb-8"></div>
+      <div class="space-y-12">
+        <div class="mb-8">
+          <h3 class="text-4xl text-rose-600 mb-4" style="font-family: 'Playfair Display', serif;">Set a Reminder</h3>
+          <div class="space-y-4">
+            <a href="https://calendar.google.com/calendar/r/eventedit?text=Zion+Raj+Weds+Ratchanya&dates=20260105T040000Z/20260105T060000Z&details=Wedding+celebration+of+Zion+Raj+and+Ratchanya&location=Peace A.G Church, 199 Prabu Plaza, Tiruchendur Main Rd, near Assembly of God Church, Shakthi Nagar, Samathanapuram, Tirunelveli, Tamil Nadu 627002, India&sf=true&output=xml"
+               target="_blank"
+               class="inline-block bg-rose-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-rose-600 transition duration-300">
+              Google Calendar
+            </a>
+            <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Zion+Raj+Weds+Ratchanya&startdt=2026-01-05T04:00:00Z&enddt=2026-01-05T06:00:00Z&body=Wedding+celebration+of+Zion+Raj+and+Ratchanya&location=Peace+A.G+Church,+Palayamkottai"
+               target="_blank"
+               class="inline-block bg-rose-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-rose-600 transition duration-300">
+              Outlook Calendar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
