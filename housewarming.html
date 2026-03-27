@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housewarming Invitation - Serenity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-blue: #1a3a5f;
+            --soft-cream: #fdfcf8;
+        }
+
+        body {
+            background-color: #e5e7eb;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* A4 Aspect Ratio Simulation */
+        .a4-page {
+            width: 210mm;
+            height: 297mm;
+            background-color: var(--soft-cream);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            border: 1px solid #ddd;
+			padding-top: 3mm;
+        }
+
+        /* Decorative Border */
+        .border-inner {
+            position: absolute;
+            top: 10mm;
+            left: 10mm;
+            right: 10mm;
+            bottom: 10mm;
+            border: 2px solid var(--primary-gold);
+            pointer-events: none;
+        }
+
+        .corner-decoration {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 4px solid var(--primary-gold);
+        }
+
+        .top-left { top: -5px; left: -5px; border-right: 0; border-bottom: 0; }
+        .top-right { top: -5px; right: -5px; border-left: 0; border-bottom: 0; }
+        .bottom-left { bottom: -5px; left: -5px; border-right: 0; border-top: 0; }
+        .bottom-right { bottom: -5px; right: -5px; border-left: 0; border-top: 0; }
+
+        .script-font { font-family: 'Great Vibes', cursive; }
+        .serif-font { font-family: 'Playfair Display', serif; }
+        .display-font { font-family: 'Cinzel Decorative', cursive; }
+
+        .divider {
+            width: 600px;
+            height: 1mm;
+            background: linear-gradient(to right, transparent, var(--primary-gold), transparent);
+            margin: 1.5rem 0;
+        }
+
+        .map-link {
+            color: var(--deep-blue);
+            text-decoration: none;
+            font-size: 0.85rem;
+            border-bottom: 1px solid var(--deep-blue);
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-page" id="invitation">
+        <div class="border-inner">
+            <div class="corner-decoration top-left"></div>
+            <div class="corner-decoration top-right"></div>
+            <div class="corner-decoration bottom-left"></div>
+            <div class="corner-decoration bottom-right"></div>
+        </div>
+
+        <!-- Scripture -->
+        <div class="mt-12 text-center px-12 italic text-gray-700 serif-font text-lg leading-relaxed">
+            "Unless the Lord builds the house, the builders labor in vain."
+            <div class="mt-2 font-semibold not-italic text-sm tracking-widest">— PSALM 127:1 —</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Intro -->
+        <div class="text-center serif-font text-xl text-gray-800 px-8">
+            By the grace of our Lord and Savior Jesus Christ,<br>
+            we cordially invite you to our
+        </div>
+
+        <!-- Main Title -->
+        <div class="mt-6 mb-2 text-center">
+            <h1 class="display-font text-5xl text-[#c5a059] font-bold tracking-tighter">HOUSEWARMING</h1>
+            <p class="script-font text-4xl text-blue-900 mt-2">Ceremony</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Details -->
+        <div class="text-center space-y-6">
+            <div>
+                <p class="uppercase tracking-[0.3em] text-xs text-gray-500 font-bold mb-1">When</p>
+                <p class="serif-font text-2xl text-gray-900 font-bold">April 11th, 2026</p>
+                <p class="text-lg text-gray-700">11:00 AM Onwards</p>
+            </div>
+
+            <div>
+                <p class="uppercase tracking-[0.3em] text-xs text-gray-500 font-bold mb-1">Where</p>
+                <p class="display-font text-3xl text-blue-900 mb-2">"SERENITY"</p>
+                <p class="text-lg text-gray-800 leading-relaxed">
+                    #61, Beski Nagar 2, Reddiyarpatti,<br>
+                    Tirunelveli - 627007<br>
+					(Behind CSI Sojourner's Church)
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-10 px-16 text-center text-gray-700 italic serif-font text-lg">
+            Kindly grace us with your presence with your friends and family!
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Footer / QR -->
+        <div class="flex flex-col items-center">
+            <div id="qrcode" class="mb-4 bg-white p-2 border border-gray-200"></div>
+            <p class="text-xs uppercase tracking-widest text-gray-500 mb-2">Scan for Location</p>
+            <a href="https://maps.app.goo.gl/XUPYt5RZv3zkVWv56" target="_blank" class="map-link">
+                View on Google Maps
+            </a>
+        </div>
+
+        <div class="mt-10 mb-10 text-center">
+            <p class="script-font text-3xl text-blue-900">With love,</p>
+            <p class="mt-2 font-semibold text-gray-800 tracking-widest uppercase text-sm">Abishek & Leeli</p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const googleMapsUrl = "https://maps.app.goo.gl/XUPYt5RZv3zkVWv56";
+            new QRCode(document.getElementById("qrcode"), {
+                text: googleMapsUrl,
+                width: 100,
+                height: 100,
+                colorDark : "#1a3a5f",
+                colorLight : "#fdfcf8",
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        };
+    </script>
+</body>
+</html>
